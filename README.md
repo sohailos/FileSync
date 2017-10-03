@@ -1,2 +1,2 @@
-# FileSync
-Rsync-like program that synchronizes directories on different computers across a network.
+# File Synchronizer
+Written in C, File Synchronizer is a program that copies files and/or directories from a host computer to a remote server. If the directories already exist on the server the program updates the files if any changes have been made. To check if any changes have been made the program compares the file sizes, permission, and their hash values. The hash value for a file is generated using a XOR hashing algorithm. The information is transferred byte by byte through a TCP socket.
